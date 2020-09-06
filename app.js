@@ -1,7 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import {gradeRouter} from './routes/gradeRouter.js';
+import { gradeRouter } from './routes/gradeRouter.js';
 
 import { db } from './models/index.js';
 
@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: 'https://desafio4-front.herokuapp.com/',
+    origin: 'https://desafio4-front.herokuapp.com/*',
   })
 );
 
